@@ -1,0 +1,8 @@
+---
+
+- name: Install Supervisor
+  apt: name=supervisor state=present
+  notify: start supervisor
+  tags: 
+    - supervisor
+    - packages
